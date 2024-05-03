@@ -132,8 +132,7 @@ nav .nav-bar .logo a{
     margin: 0 5px;
 }
 
-.dark-light i,
-.searchToggle i{
+.dark-light i{
     position: absolute;
     color: var(--text-color);
     font-size: 22px;

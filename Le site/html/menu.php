@@ -8,12 +8,11 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href="./css/accueil.css">
 
         <title>Responsive bottom navigation</title>
     </head>
     <body>
-        
+       
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -22,7 +21,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#Accueil" class="nav__link texte active-link">
+                            <a href="Accueil" class="nav__link texte active-link">
                                 <i class='bx bx-home-alt nav__icon'></i>
                                 <span class="nav__name">Accueil</span>
                             </a>
@@ -79,8 +78,6 @@
             <!--=============== HOME ===============-->
             <section class="container section section__height" id="Accueil">
                 <h2 class="section__title">Accueil</h2>
-
-                <?php include ("./html/accueil.php") ?>
             </section>
 
             <!--=============== ABOUT ===============-->
@@ -107,6 +104,5 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="./js/main.js"></script>
-        <script src="./js/app.js"></script>
     </body>
 </html>
