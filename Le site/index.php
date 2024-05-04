@@ -6,9 +6,16 @@
         <!-- ===== Boxicons CSS ===== -->
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/accueil.css">
+        <link rel="stylesheet" href="./css/actualite.css">
+        
+        
+        <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+      
 
         <title>Responsive bottom navigation</title>
     </head>
@@ -96,6 +103,7 @@
             <!--=============== PORTFOLIO ===============-->
             <section class="container section section__height" id="Activités">
                 <h2 class="section__title">Activités</h2>
+                <?php include ("./html/actualite.php") ?>
             </section>
 
             <!--=============== CONTACTME ===============-->
@@ -107,6 +115,24 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="./js/main.js"></script>
-        <script src="./js/app.js"></script>
+        <script src="./js/accueil.js"></script>
+        <script src="./js/equipe.js"></script>
+        <script src="./js/swiper-bundle.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+        <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     </body>
 </html>
